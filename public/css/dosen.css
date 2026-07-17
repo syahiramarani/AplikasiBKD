@@ -1,0 +1,566 @@
+.dosen-header {
+    background: #534ab7;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+}
+
+.dosen-header-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #eeedfe;
+    margin: 0;
+}
+
+.dosen-header-sub {
+    font-size: 14px;
+    color: #afa9ec;
+    margin-top: 3px;
+}
+
+.btn-add-dosen {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    background: #eeedfe;
+    color: #3c3489;
+    border: none;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.15s;
+}
+
+.btn-add-dosen:hover {
+    background: #cecbf6;
+    color: #3c3489;
+    text-decoration: none;
+}
+
+/* Stat cards */
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+    margin-bottom: 1.25rem;
+}
+
+.stat-card {
+    background: #fff;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 0.9rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.stat-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.stat-icon.purple {
+    background: #eeedfe;
+    color: #534ab7;
+}
+
+.stat-icon.teal {
+    background: #e1f5ee;
+    color: #0f6e56;
+}
+
+.stat-icon.amber {
+    background: #faeeda;
+    color: #854f0b;
+}
+
+.stat-icon.coral {
+    background: #faece7;
+    color: #993c1d;
+}
+
+.stat-val {
+    font-size: 22px;
+    font-weight: 500;
+    color: #1a1a2e;
+    line-height: 1;
+}
+
+.stat-lbl {
+    font-size: 11px;
+    color: #6b7280;
+    margin-top: 3px;
+}
+
+/* Main card */
+.main-card {
+    background: #fff;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 1.25rem;
+}
+
+/* Toolbar */
+.dosen-toolbar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
+}
+
+.toolbar-left {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.toolbar-right {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.field-group label {
+    font-size: 11px;
+    font-weight: 500;
+    color: #6b7280;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.field-group select,
+.field-group input[type="file"] {
+    height: 36px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 0 10px;
+    font-size: 13px;
+    background: #fff;
+    color: #111827;
+    outline: none;
+}
+
+.field-group select:focus {
+    border-color: #534ab7;
+}
+
+/* Buttons */
+.btn-purple {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 36px;
+    padding: 0 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #534ab7;
+    color: #eeedfe;
+    border: none;
+    transition: background 0.15s;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.btn-purple:hover {
+    background: #3c3489;
+    color: #eeedfe;
+    text-decoration: none;
+}
+
+.btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 36px;
+    padding: 0 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    background: transparent;
+    color: #374151;
+    border: 1px solid #e5e7eb;
+    transition: background 0.15s;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.btn-outline:hover {
+    background: #f9fafb;
+    color: #374151;
+    text-decoration: none;
+}
+
+.btn-teal {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 36px;
+    padding: 0 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #e1f5ee;
+    color: #085041;
+    border: 1px solid #9fe1cb;
+    transition: background 0.15s;
+    white-space: nowrap;
+}
+
+.btn-teal:hover {
+    background: #9fe1cb;
+}
+
+/* Table */
+.dosen-table-wrap {
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.dosen-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.dosen-table thead tr {
+    background: #eeedfe;
+}
+
+.dosen-table thead th {
+    padding: 10px 12px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 500;
+    color: #3c3489;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #cecbf6;
+    white-space: nowrap;
+}
+
+.dosen-table tbody tr {
+    border-bottom: 0.5px solid #f3f4f6;
+}
+
+.dosen-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.dosen-table tbody tr:hover {
+    background: #eeedfe22;
+}
+
+.dosen-table tbody td {
+    padding: 10px 12px;
+    color: #111827;
+    vertical-align: middle;
+}
+
+/* NIP */
+.cell-nip {
+    font-family: monospace;
+    font-size: 11px;
+    color: #6b7280;
+}
+
+/* Avatar */
+.avatar-cell {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dosen-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 500;
+    flex-shrink: 0;
+}
+
+/* Badges */
+.badge {
+    display: inline-block;
+    padding: 3px 9px;
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.badge-dt {
+    background: #eeedfe;
+    color: #3c3489;
+}
+
+.badge-ds {
+    background: #e1f5ee;
+    color: #085041;
+}
+
+.badge-jur {
+    background: #faeeda;
+    color: #633806;
+}
+
+.badge-mkdu {
+    background: #faece7;
+    color: #712b13;
+}
+
+/* Action buttons */
+.btn-view {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    height: 28px;
+    padding: 0 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #e1f5ee;
+    color: #085041;
+    border: 1px solid #9fe1cb;
+    white-space: nowrap;
+    transition: background 0.15s;
+}
+
+.btn-view:hover {
+    background: #9fe1cb;
+}
+
+.btn-edit {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    height: 28px;
+    padding: 0 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #eeedfe;
+    color: #3c3489;
+    border: 1px solid #afa9ec;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.15s;
+}
+
+.btn-edit:hover {
+    background: #cecbf6;
+    color: #3c3489;
+    text-decoration: none;
+}
+
+.btn-hapus {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    height: 28px;
+    padding: 0 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #faece7;
+    color: #712b13;
+    border: 1px solid #f5c4b3;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.15s;
+}
+
+.btn-hapus:hover {
+    background: #f5c4b3;
+    color: #712b13;
+    text-decoration: none;
+}
+
+/* Alert */
+.alert-sukses {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-size: 13px;
+    background: #e1f5ee;
+    color: #085041;
+    border: 1px solid #9fe1cb;
+}
+
+/* Loading overlay */
+#loadingOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(83, 74, 183, 0.7);
+    z-index: 99999;
+}
+
+#loadingOverlay .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #eeedfe;
+}
+
+#loadingOverlay .spinner-border {
+    color: #eeedfe !important;
+}
+
+#loadingOverlay .label {
+    margin-top: 10px;
+    font-size: 14px;
+}
+/* ============================
+   MODAL VIEW DOSEN - BASE
+   ============================ */
+.modal-content-custom {
+    border-radius: 12px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.modal-header-purple {
+    background: #534ab7;
+    border-radius: 12px 12px 0 0;
+    border-bottom: none;
+}
+
+.modal-footer-custom {
+    border-top: 0.5px solid #f3f4f6;
+    padding: 0.75rem 1.25rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 36px;
+    padding: 0 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    background: transparent;
+    color: #374151;
+    border: 1px solid #e5e7eb;
+    transition: background 0.15s;
+    white-space: nowrap;
+}
+
+.btn-outline:hover {
+    background: #f9fafb;
+}
+
+/* ============================
+   DETAIL ROWS (Jabatan, Jurusan, Prodi)
+   ============================ */
+.detail-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0.65rem 0;
+    border-bottom: 0.5px solid #f3f4f6;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-key {
+    font-size: 11px;
+    font-weight: 500;
+    color: #6b7280;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    min-width: 80px; /* dilebarkan dari 60px agar "Jabatan/Jurusan" tidak wrap */
+    flex-shrink: 0;
+}
+
+.detail-val {
+    font-size: 13px;
+    color: #111827;
+}
+
+/* ============================
+   AVATAR INISIAL DOSEN
+   ============================ */
+#vd_avatar {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: #eeedfe;
+    color: #3c3489;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    flex-shrink: 0;
+}
+
+/* ============================
+   BADGE KEAHLIAN
+   ============================ */
+#vd_keahlian {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.badge-keahlian {
+    display: inline-flex;
+    align-items: center;
+    height: 26px;
+    padding: 0 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 500;
+    background: #eeedfe;
+    color: #3c3489;
+    white-space: nowrap;
+}

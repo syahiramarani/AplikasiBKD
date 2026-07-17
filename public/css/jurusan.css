@@ -1,0 +1,330 @@
+.jur-header {
+    background: #534ab7;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+}
+
+.jur-header-title {
+    font-size: 22px;
+    font-weight: 500;
+    color: #eeedfe;
+    margin: 0;
+}
+
+.jur-header-sub {
+    font-size: 16px;
+    color: #afa9ec;
+    margin-top: 3px;
+}
+
+.btn-add-jurusan {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    background: #eeedfe;
+    color: #3c3489;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.15s;
+}
+
+.btn-add-jurusan:hover {
+    background: #cecbf6;
+    color: #3c3489;
+}
+
+/* Stat card */
+.stat-card {
+    background: #fff;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 0.9rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.stat-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.stat-icon.purple {
+    background: #eeedfe;
+    color: #534ab7;
+}
+
+.stat-val {
+    font-size: 22px;
+    font-weight: 500;
+    color: #1a1a2e;
+    line-height: 1;
+}
+
+.stat-lbl {
+    font-size: 11px;
+    color: #6b7280;
+    margin-top: 3px;
+}
+
+/* Main card */
+.main-card {
+    background: #fff;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 1.25rem;
+}
+
+/* Toolbar */
+.jur-toolbar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 1.25rem;
+}
+
+.search-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-input {
+    height: 36px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 0 10px;
+    font-size: 13px;
+    background: #fff;
+    color: #111827;
+    outline: none;
+    min-width: 220px;
+}
+
+.search-input:focus {
+    border-color: #534ab7;
+}
+
+.btn-purple {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 36px;
+    padding: 0 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #534ab7;
+    color: #eeedfe;
+    border: none;
+    transition: background 0.15s;
+    white-space: nowrap;
+}
+
+.btn-purple:hover {
+    background: #3c3489;
+}
+
+.btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 36px;
+    padding: 0 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    background: transparent;
+    color: #374151;
+    border: 1px solid #e5e7eb;
+    transition: background 0.15s;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.btn-outline:hover {
+    background: #f9fafb;
+    color: #374151;
+}
+
+/* Table */
+.jur-table-wrap {
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.jur-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.jur-table thead tr {
+    background: #eeedfe;
+}
+
+.jur-table thead th {
+    padding: 10px 12px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 500;
+    color: #3c3489;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #cecbf6;
+    white-space: nowrap;
+}
+
+.jur-table tbody tr {
+    border-bottom: 0.5px solid #f3f4f6;
+}
+
+.jur-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.jur-table tbody tr:hover {
+    background: #eeedfe22;
+}
+
+.jur-table tbody td {
+    padding: 10px 12px;
+    color: #111827;
+    vertical-align: middle;
+}
+
+/* Kode avatar */
+.kode-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 500;
+    flex-shrink: 0;
+}
+
+.name-cell {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Badge kode */
+.badge-code {
+    display: inline-block;
+    padding: 3px 9px;
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: 500;
+    background: #eeedfe;
+    color: #3c3489;
+    font-family: monospace;
+}
+
+/* Action buttons */
+.btn-view {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    height: 28px;
+    padding: 0 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #e1f5ee;
+    color: #085041;
+    border: 1px solid #9fe1cb;
+    white-space: nowrap;
+    transition: background 0.15s;
+}
+
+.btn-view:hover {
+    background: #9fe1cb;
+}
+
+.btn-edit {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    height: 28px;
+    padding: 0 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #eeedfe;
+    color: #3c3489;
+    border: 1px solid #afa9ec;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.15s;
+}
+
+.btn-edit:hover {
+    background: #cecbf6;
+    color: #3c3489;
+    text-decoration: none;
+}
+
+.btn-hapus {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    height: 28px;
+    padding: 0 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #faece7;
+    color: #712b13;
+    border: 1px solid #f5c4b3;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.15s;
+}
+
+.btn-hapus:hover {
+    background: #f5c4b3;
+    color: #712b13;
+    text-decoration: none;
+}
+
+/* Alert */
+.alert-sukses {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-size: 13px;
+    background: #e1f5ee;
+    color: #085041;
+    border: 1px solid #9fe1cb;
+}
